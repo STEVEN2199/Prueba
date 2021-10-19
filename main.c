@@ -6,7 +6,7 @@
 #include "distance.h"
 
 double miles_fact = 1.609;
-
+"cambio 1"
 double main(void) {
 	float kilometers, miles;
 	
