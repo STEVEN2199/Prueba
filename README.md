@@ -10,7 +10,7 @@ En esta ocasión se implementara un "nuevo shell" básico de Linux usando las fu
 2. El programa debe ofrecer el prompt ">>" y permitir la ejecución de cualquier programa o comando (excepto built-ins de bash) en la máquina, incluyendo argumentos, por ejemplo:
 	```
 	$ ./alexa
-	\>> ls -lh /usr 
+	>> ls -lh /usr 
 	total 120K 
 	drwxr-xr-x   2 root root  44K Aug  3 13:13 bin 
 	drwxr-xr-x   2 root root 4.0K Apr 23 09:35 games 
@@ -30,7 +30,7 @@ En esta ocasión se implementara un "nuevo shell" básico de Linux usando las fu
 3. Debe soportar tan solo un built-in command: QUIT, el cual termina el shell:
 	```
 	$ ./alexa
-	\>>QUIT
+	>>QUIT
 	BYE!
 	$ 
 	```
