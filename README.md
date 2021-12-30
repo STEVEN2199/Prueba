@@ -3,11 +3,12 @@
 ## Instrucciones
 En esta ocasión se implementara un "nuevo shell" básico de Linux usando las funciones fork() y execvp(). 
 1. El programa debe tener el siguiente comportamiento:
-
+	```
 	$ ./alexa
 	>> 
+	```
 2. El programa debe ofrecer el prompt ">>" y permitir la ejecución de cualquier programa o comando (excepto built-ins de bash) en la máquina, incluyendo argumentos, por ejemplo:
-
+	```
 	$ ./alexa
 	\>> ls -lh /usr 
 	total 120K 
@@ -24,18 +25,20 @@ En esta ocasión se implementara un "nuevo shell" básico de Linux usando las fu
 	drwxr-xr-x 234 root root  12K Jul 15 14:31 share 
 	drwxr-xr-x   6 root root 4.0K Aug  2 19:10 src
 	\>>
-	
+	```
 	
 3. Debe soportar tan solo un built-in command: QUIT, el cual termina el shell:
-
+	```
 	$ ./alexa
 	\>>QUIT
 	BYE!
 	$ 
+	```
 
 4. Este "nuevo shell" debe crear un proceso hijo para ejecutar un programa usando fork() y execvp(). Se debe hacer "parsing" de los argumentos y enviarlos correctamente a execvp(). 
 Esto se puede hacer con la función strtok(), a continuación un ejemplo de su uso:
-
+	
+	```
 	/**
 	* Función ejemplo para separar una cadena de caracteres en
 	* "tokens" delimitados por la cadena de caracteres delim.
@@ -59,6 +62,8 @@ Esto se puede hacer con la función strtok(), a continuación un ejemplo de su u
 			token = strtok(NULL, delim);
 		}
 	}
+	
+	```
 
 Nota: NO se debe implementar el uso de redirección: ¦ > <
 
