@@ -7,7 +7,7 @@ En esta ocasión se implementara un "nuevo shell" básico de Linux usando las fu
 	$ ./alexa
 	>> 
 2. El programa debe ofrecer el prompt ">>" y permitir la ejecución de cualquier programa o comando (excepto built-ins de bash) en la máquina, incluyendo argumentos, por ejemplo:
-
+	/*
 	$ ./alexa
 	>>ls -lh /usr
 	total 120K
@@ -24,7 +24,8 @@ En esta ocasión se implementara un "nuevo shell" básico de Linux usando las fu
 	drwxr-xr-x 234 root root  12K Jul 15 14:31 share
 	drwxr-xr-x   6 root root 4.0K Aug  2 19:10 src
 	>>
-
+	*/
+	
 3. Debe soportar tan solo un built-in command: QUIT, el cual termina el shell:
 
 	$ ./alexa
