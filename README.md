@@ -9,27 +9,27 @@ En esta ocasión se implementara un "nuevo shell" básico de Linux usando las fu
 2. El programa debe ofrecer el prompt ">>" y permitir la ejecución de cualquier programa o comando (excepto built-ins de bash) en la máquina, incluyendo argumentos, por ejemplo:
 
 	$ ./alexa
-	\>> ls -lh /usr \n
-	total 120K \n
-	drwxr-xr-x   2 root root  44K Aug  3 13:13 bin \n
-	drwxr-xr-x   2 root root 4.0K Apr 23 09:35 games \n
-	drwxr-xr-x  42 root root 4.0K Jul 15 14:32 include \n
-	drwxr-xr-x 110 root root 4.0K Jul 27 10:06 lib \n
-	drwxr-xr-x   2 root root 4.0K Apr 23 09:32 lib32 \n
-	drwxr-xr-x   2 root root 4.0K Apr 23 09:32 lib64 \n
-	drwxr-xr-x  11 root root  12K Jul 27 10:05 libexec \n
-	drwxr-xr-x   2 root root 4.0K Apr 23 09:32 libx32 \n
-	drwxr-xr-x  10 root root 4.0K Apr 23 09:32 local \n
-	drwxr-xr-x   2 root root  20K Aug  5 18:56 sbin \n
-	drwxr-xr-x 234 root root  12K Jul 15 14:31 share \n
-	drwxr-xr-x   6 root root 4.0K Aug  2 19:10 src \n
+	\>> ls -lh /usr 
+	total 120K 
+	drwxr-xr-x   2 root root  44K Aug  3 13:13 bin 
+	drwxr-xr-x   2 root root 4.0K Apr 23 09:35 games 
+	drwxr-xr-x  42 root root 4.0K Jul 15 14:32 include 
+	drwxr-xr-x 110 root root 4.0K Jul 27 10:06 lib 
+	drwxr-xr-x   2 root root 4.0K Apr 23 09:32 lib32 
+	drwxr-xr-x   2 root root 4.0K Apr 23 09:32 lib64 
+	drwxr-xr-x  11 root root  12K Jul 27 10:05 libexec 
+	drwxr-xr-x   2 root root 4.0K Apr 23 09:32 libx32 
+	drwxr-xr-x  10 root root 4.0K Apr 23 09:32 local
+	drwxr-xr-x   2 root root  20K Aug  5 18:56 sbin 
+	drwxr-xr-x 234 root root  12K Jul 15 14:31 share 
+	drwxr-xr-x   6 root root 4.0K Aug  2 19:10 src
 	\>>
 	
 	
 3. Debe soportar tan solo un built-in command: QUIT, el cual termina el shell:
 
 	$ ./alexa
-	>>QUIT
+	\>>QUIT
 	BYE!
 	$ 
 
